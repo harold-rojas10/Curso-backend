@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Reserva Restaurante</title>
+    <style>
+body{
+    background-color: gray;
+    color: blanchedalmond;
+}
+    </style>
+
+</head>
+
+<body>
+    <h1> Restaurante backend basico</h1>
+    <h2>SISTEMA DE GESTION DE RESERVAS </h2>
+
+    <form action="reserva.html" method="get" accept-charset="UTF-8">
+        <fieldset>
+            <legend>Datos de reserva</legend>
+            <label for="name">Nombre: </label>
+            <input id="name" type="text" placeholder="Nombre" autocomplete="on" required>
+            <br>
+            <br>
+            <label for="email">Correo: </label>
+            <input type="email" id="email" placeholder="Correo" autocomplete="on" size="25" required>
+            <br>
+            <br>
+            <label for="tel">Teléfono:</label>
+            <input id="tel" type="tel" placeholder="Telefono" minlength="10" maxlength="10"  pattern="[0-9]{10}" required>
+            <br>
+            <br>
+            <label for="fecha">Fecha de reserva:</label>
+            <input type="date" name="fecha" required>
+            <br>
+            <br>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" min="18:00" max="20:00" required>
+            <br>
+            <br>
+            <label for="n_personas"> Comensales (min 1, max 10):</label>
+            <input type="number" id="n_personas" min="1" max="10" required>
+            <br>
+            <br>
+            <label for="mantel"> Color del mantel</label>
+            <input type="color" id="mantel" min="1" max="10" value="#FDFBFB">
+            <br>
+            <br>
+            <label for="coment "> Comentarios especiales</label>
+            <br>
+            <br>
+            <textarea id="coment" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="menu">Menu:</label>
+            <br>
+            <br>
+            <input name="rad" type="radio" id="vegetariano" value="vegetariano" required>
+            <label for="vegetariano">vegetariano</label>
+            <br>
+            <input name="rad" type="radio" id="picante" value="picante">
+            <label for="picante">picante</label>
+            <br>
+            <input name="rad" type="radio" id="especial" value="especial">
+            <label for="especial">especial</label>
+            <br>
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
