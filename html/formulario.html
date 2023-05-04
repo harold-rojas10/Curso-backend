@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+</head>
+<body>
+    <h1>MI PRIMER FORMULARIO</h1>
+    <!--Crear formulario-->
+
+    <form >
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <input type="submit" formnovalidate value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <!--Formulario con redireccionamiento-->
+    <form action="resultado.html" target="_blank">
+        
+        <fieldset>
+            <legend>login</legend>
+            <label for="nombre1">Nombre</label>
+            <input type="text" name="nombre1" id="nombre1" >
+            <br><br>
+            <label for="email">correo:</label>
+            <input type="email" name="email" id="email" placeholder="correo" oncopy="return false" required>
+            <br><br>
+            <label for="pass">contraseña</label>
+            <input type="password" name="pass" id="pass" placeholder="pass" onpaste="return false" required>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
