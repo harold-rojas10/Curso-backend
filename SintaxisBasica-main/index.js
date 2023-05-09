@@ -9,7 +9,7 @@ console.log("Tienes " + edad + " años");
 // 2. Operaciones
 const PI = 3.14159; // Constante
 //let radio = 5; // Variable
-let radio=prompt("Escriba el radio")  
+let radio = prompt("Escriba el radio")
 let area = PI * radio ** 2; // Operador matemático y tipo de dato (número)
 let esMayorQueDiez = area > 10; // Operador de comparación y operador lógico
 let esMenorQueVeinte = area < 20; // Operador de comparación y operador lógico
