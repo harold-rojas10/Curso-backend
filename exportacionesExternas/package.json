@@ -1,0 +1,14 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "este es mi proyecto de expo esternas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Curso Backend",
+  "license": "ISC",
+  "dependencies": {
+    "loadsh": "^0.0.4"
+  }
+}
